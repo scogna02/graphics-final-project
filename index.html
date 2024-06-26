@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stack - Interactive Grahpics</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="score">0</div>
+
+  <div id="max-score">Best score: 0</div>
+
+  <div id="instructions">
+    <div class="content">
+      <p>Stack the blocks on top of each other</p>
+      <p>Click or press Space when a block is above the stack</p>
+      <p>Click H to increase difficulty or E to decrease it</p>
+      <p>Click S to start game</p>
+    </div>
+  </div>
+
+  <div id="results">
+    <div class="content">
+      <p>You missed the block</p>
+      <p>To reset the game press R</p>
+    </div>
+  </div>
+
+  <div id="difficulty" class="difficulty">Difficulty: Easy</div>
+
+  <audio id="game-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js'></script>
+  <script src="./script.js"></script>
+</body>
+</html>
+
